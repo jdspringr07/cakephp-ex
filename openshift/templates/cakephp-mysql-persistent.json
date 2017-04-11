@@ -271,7 +271,10 @@
       "kind": "PersistentVolumeClaim",
       "apiVersion": "v1",
       "metadata": {
-        "name": "${DATABASE_SERVICE_NAME}"
+        "name": "${DATABASE_SERVICE_NAME}",
+        "annotations": {
+          "volume.beta.kubernetes.io/storage-class": "gluster-dyn"
+        }        
       },
       "spec": {
         "accessModes": [
@@ -464,7 +467,7 @@
       "displayName": "Git Repository URL",
       "description": "The URL of the repository with your application source code.",
       "required": true,
-      "value": "https://github.com/openshift/cakephp-ex.git"
+      "value": "https://github.com/josh-springer/cakephp-ex.git"
     },
     {
       "name": "SOURCE_REPOSITORY_REF",
