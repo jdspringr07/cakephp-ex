@@ -1,6 +1,6 @@
 CakePHP Sample App on OpenShift
 ===============================
-
+TEST!
 This is a quickstart CakePHP application for OpenShift v3 that you can use as a starting point to develop your own application and deploy it on an [OpenShift](https://github.com/openshift/origin) cluster.
 
 If you'd like to install it, follow [these directions](https://github.com/openshift/cakephp-ex/blob/master/README.md#installation).  
